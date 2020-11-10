@@ -1,0 +1,447 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9100614000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RedfinStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify Redfin Search",
+        "description": "",
+        "id": "redfin-application;verify-redfin-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2149000800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RedfinStepDefinition.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1894887400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Redfin Homepage for \"Test1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test1",
+                  "offset": 32
+                }
+              ],
+              "location": "RedfinStepDefinition.user_is_on_Redfin_Homepage_for(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 679710700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Validate Homepage with \"Real Estate, Homes for Sale, MLS Listings, Agents\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Real Estate, Homes for Sale, MLS Listings, Agents",
+                  "offset": 24
+                }
+              ],
+              "location": "RedfinStepDefinition.validate_Homepage_with(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 727121600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter \"Sunnyvale\" In Search Box and press Enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunnyvale",
+                  "offset": 7
+                }
+              ],
+              "location": "RedfinStepDefinition.enter_In_Search_Box_and_press_Enter(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 295072300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Validate Popup",
+            "match": {
+              "location": "RedfinStepDefinition.validate_Popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1887166800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "On Popup select \"https://www.redfin.com/city/19457/CA/Sunnyvale\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.redfin.com/city/19457/CA/Sunnyvale",
+                  "offset": 17
+                }
+              ],
+              "location": "RedfinStepDefinition.on_Popup_select(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2123711100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate Real Estate Page as \"Sunnyvale Homes for Sale: Sunnyvale, CA Real Estate\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunnyvale Homes for Sale: Sunnyvale, CA Real Estate",
+                  "offset": 30
+                }
+              ],
+              "location": "RedfinStepDefinition.validate_Real_Estate_Page_as(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 242211900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "asserto Search Box has \"Sunnyvale\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunnyvale",
+                  "offset": 24
+                }
+              ],
+              "location": "RedfinStepDefinition.asserto_Search_Box_has(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3428203100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"$800k\" and \"$950k\" are selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$800k",
+                  "offset": 1
+                },
+                {
+                  "val": "$950k",
+                  "offset": 13
+                }
+              ],
+              "location": "RedfinStepDefinition.and_are_selected(String,String)"
+            },
+            "matchedColumns": [
+              6,
+              7
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110997900,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat RedfinStepDefinition.verify_all_homes_are_from(RedfinStepDefinition.java:158)\r\n\tat ✽.Then Verify all homes are from \"/CA/Sunnyvale/\"(Redfin.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "Verify all homes are from \"/CA/Sunnyvale/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/CA/Sunnyvale/",
+                  "offset": 27
+                }
+              ],
+              "location": "RedfinStepDefinition.verify_all_homes_are_from(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5347313100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RedfinStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify Redfin Search",
+        "description": "",
+        "id": "redfin-application;verify-redfin-search;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 162549600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RedfinStepDefinition.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1187223200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Redfin Homepage for \"Test2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2",
+                  "offset": 32
+                }
+              ],
+              "location": "RedfinStepDefinition.user_is_on_Redfin_Homepage_for(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 609891600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Validate Homepage with \"Real Estate, Homes for Sale, MLS Listings, Agents\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Real Estate, Homes for Sale, MLS Listings, Agents",
+                  "offset": 24
+                }
+              ],
+              "location": "RedfinStepDefinition.validate_Homepage_with(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 608258800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter \"Sunnyvale\" In Search Box and press Enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunnyvale",
+                  "offset": 7
+                }
+              ],
+              "location": "RedfinStepDefinition.enter_In_Search_Box_and_press_Enter(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 285032200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Validate Popup",
+            "match": {
+              "location": "RedfinStepDefinition.validate_Popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1297832400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "On Popup select \"https://www.redfin.com/neighborhood/338644/TX/Dallas/Sunnyvale\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.redfin.com/neighborhood/338644/TX/Dallas/Sunnyvale",
+                  "offset": 17
+                }
+              ],
+              "location": "RedfinStepDefinition.on_Popup_select(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 914311900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate Real Estate Page as \"Sunnyvale, Dallas, TX Homes for Sale \u0026 Real Estate\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunnyvale, Dallas, TX Homes for Sale \u0026 Real Estate",
+                  "offset": 30
+                }
+              ],
+              "location": "RedfinStepDefinition.validate_Real_Estate_Page_as(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 656384100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "asserto Search Box has \"Sunnyvale\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunnyvale",
+                  "offset": 24
+                }
+              ],
+              "location": "RedfinStepDefinition.asserto_Search_Box_has(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3655406700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"$600k\" and \"$800k\" are selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$600k",
+                  "offset": 1
+                },
+                {
+                  "val": "$800k",
+                  "offset": 13
+                }
+              ],
+              "location": "RedfinStepDefinition.and_are_selected(String,String)"
+            },
+            "matchedColumns": [
+              6,
+              7
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30038012200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify all homes are from \"/TX/Dallas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/TX/Dallas",
+                  "offset": 27
+                }
+              ],
+              "location": "RedfinStepDefinition.verify_all_homes_are_from(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Redfin Application",
+    "description": "",
+    "id": "redfin-application",
+    "keyword": "Feature",
+    "uri": "Redfin.feature"
+  }
+]

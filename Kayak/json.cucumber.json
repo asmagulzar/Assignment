@@ -1,0 +1,188 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6981664900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "KayakStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Check Origin and Destination Details",
+        "description": "",
+        "id": "kayak-application;check-origin-and-destination-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 349136400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "KayakStepDefinition.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3246556600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User On Kayak Website \"Test1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test1",
+                  "offset": 23
+                }
+              ],
+              "location": "KayakStepDefinition.user_On_Kayak_Website(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6167061700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "\"MIA\" and \"NYC\" cities are entered",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MIA",
+                  "offset": 1
+                },
+                {
+                  "val": "NYC",
+                  "offset": 11
+                }
+              ],
+              "location": "KayakStepDefinition.and_cities_are_entered(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 324200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"FLL\" and \"HPN\" airports are selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FLL",
+                  "offset": 1
+                },
+                {
+                  "val": "HPN",
+                  "offset": 11
+                }
+              ],
+              "location": "KayakStepDefinition.and_airports_are_selected(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5221004000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"10/20/2020\" and \"10/30/2020\" dates are selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10/20/2020",
+                  "offset": 1
+                },
+                {
+                  "val": "10/30/2020",
+                  "offset": 18
+                }
+              ],
+              "location": "KayakStepDefinition.and_dates_are_selected(String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click Search And Validate SearchPage",
+            "match": {
+              "location": "KayakStepDefinition.click_Search_And_Validate_SearchPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 177600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Search Result \"3\" is selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 15
+                }
+              ],
+              "location": "KayakStepDefinition.search_Result_is_selected(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate Origin and Destination",
+            "match": {
+              "location": "KayakStepDefinition.validate_Origin_and_Destination()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Kayak Application",
+    "description": "",
+    "id": "kayak-application",
+    "keyword": "Feature",
+    "uri": "kayak.feature"
+  }
+]

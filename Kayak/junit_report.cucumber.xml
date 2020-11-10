@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.966167">
+<testcase classname="Kayak Application" name="Check Origin and Destination Details" time="21.966167">
+<system-out><![CDATA[Given User On Kayak Website "Test1".........................................passed
+When "MIA" and "NYC" cities are entered.....................................passed
+When "FLL" and "HPN" airports are selected..................................passed
+And "10/20/2020" and "10/30/2020" dates are selected........................passed
+Then Click Search And Validate SearchPage...................................passed
+When Search Result "3" is selected..........................................passed
+Then Validate Origin and Destination........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

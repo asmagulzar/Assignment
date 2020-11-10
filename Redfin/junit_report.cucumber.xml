@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="67.400914">
+<testcase classname="Redfin Application" name="Verify Redfin Search" time="22.638698">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at RedfinStepDefinition.verify_all_homes_are_from(RedfinStepDefinition.java:158)&#13;&#10;&#9;at ✽.Then Verify all homes are from &quot;/CA/Sunnyvale/&quot;(Redfin.feature:12)&#13;&#10;"><![CDATA[Given User is on Redfin Homepage for "Test1"................................passed
+Then Validate Homepage with "Real Estate, Homes for Sale, MLS Listings, Agents".passed
+And Enter "Sunnyvale" In Search Box and press Enter.........................passed
+Then Validate Popup.........................................................passed
+When On Popup select "https://www.redfin.com/city/19457/CA/Sunnyvale".......passed
+Then Validate Real Estate Page as "Sunnyvale Homes for Sale: Sunnyvale, CA Real Estate".passed
+And asserto Search Box has "Sunnyvale"......................................passed
+When "$800k" and "$950k" are selected.......................................passed
+Then Verify all homes are from "/CA/Sunnyvale/".............................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at RedfinStepDefinition.verify_all_homes_are_from(RedfinStepDefinition.java:158)
+	at ✽.Then Verify all homes are from "/CA/Sunnyvale/"(Redfin.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Redfin Application" name="Verify Redfin Search 2" time="44.762216">
+<system-out><![CDATA[Given User is on Redfin Homepage for "Test2"................................passed
+Then Validate Homepage with "Real Estate, Homes for Sale, MLS Listings, Agents".passed
+And Enter "Sunnyvale" In Search Box and press Enter.........................passed
+Then Validate Popup.........................................................passed
+When On Popup select "https://www.redfin.com/neighborhood/338644/TX/Dallas/Sunnyvale".passed
+Then Validate Real Estate Page as "Sunnyvale, Dallas, TX Homes for Sale & Real Estate".passed
+And asserto Search Box has "Sunnyvale"......................................passed
+When "$600k" and "$800k" are selected.......................................passed
+Then Verify all homes are from "/TX/Dallas".................................passed
+]]></system-out>
+</testcase>
+</testsuite>
