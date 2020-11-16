@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="356153" started-at="2020-11-14T22:59:55 EST" finished-at="2020-11-14T23:05:51 EST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="356153" started-at="2020-11-14T22:59:55 EST" finished-at="2020-11-14T23:05:51 EST">
+      <class name="Country">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:Country@d44fc21]" name="setUP" is-config="true" duration-ms="2213" started-at="2020-11-14T22:59:55 EST" finished-at="2020-11-14T22:59:57 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="getCapitalfromName()[pri:1, instance:Country@d44fc21]" name="getCapitalfromName" duration-ms="20377" started-at="2020-11-14T22:59:57 EST" finished-at="2020-11-14T23:00:17 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCapitalfromName -->
+        <test-method status="PASS" signature="validate_filter()[pri:2, instance:Country@d44fc21]" name="validate_filter" duration-ms="161" started-at="2020-11-14T23:00:17 EST" finished-at="2020-11-14T23:00:17 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_filter -->
+        <test-method status="PASS" signature="getCapitalfromCode()[pri:3, instance:Country@d44fc21]" name="getCapitalfromCode" duration-ms="281269" started-at="2020-11-14T23:00:17 EST" finished-at="2020-11-14T23:04:59 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCapitalfromCode -->
+        <test-method status="PASS" signature="invalid_Code()[pri:4, instance:Country@d44fc21]" name="invalid_Code" duration-ms="4093" started-at="2020-11-14T23:04:59 EST" finished-at="2020-11-14T23:05:03 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_Code -->
+        <test-method status="PASS" signature="invalid_URI()[pri:5, instance:Country@d44fc21]" name="invalid_URI" duration-ms="8740" started-at="2020-11-14T23:05:03 EST" finished-at="2020-11-14T23:05:11 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_URI -->
+        <test-method status="PASS" signature="validate_ContentType()[pri:5, instance:Country@d44fc21]" name="validate_ContentType" duration-ms="33956" started-at="2020-11-14T23:05:11 EST" finished-at="2020-11-14T23:05:45 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_ContentType -->
+        <test-method status="PASS" signature="invalid_Method()[pri:6, instance:Country@d44fc21]" name="invalid_Method" duration-ms="5288" started-at="2020-11-14T23:05:45 EST" finished-at="2020-11-14T23:05:51 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_Method -->
+      </class> <!-- Country -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

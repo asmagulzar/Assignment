@@ -1,5 +1,8 @@
 package Base;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -105,3 +108,45 @@ public class KayakTestBase {
 	}
 	
 }
+
+//import java.io.FileInputStream;
+//import java.io.FileNotFoundException;
+//import java.io.IOException;
+//import org.apache.poi.xssf.usermodel.XSSFRow;
+//import org.apache.poi.xssf.usermodel.XSSFSheet;
+//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//import org.testng.annotations.DataProvider;
+//import org.hamcrest.Matcher;
+//import org.json.JSONArray;
+//import org.json.JSONObject;
+//@DataProvider
+//public Object[][] getData() throws FileNotFoundException, IOException{
+//	
+//	XSSFWorkbook myExcelBook = new XSSFWorkbook(new FileInputStream("./Resources/Data.xlsx"));
+//	XSSFSheet myExcelSheet = myExcelBook.getSheet("Country Details");
+//	XSSFRow row ; 
+//	int totalRows = myExcelSheet.getLastRowNum();
+//	
+//	Object[][] data = new Object[totalRows][3];
+//	 for (int i=1;i<=totalRows;i++) {
+//		 row= myExcelSheet.getRow(i);
+//		 for(int j=0;j<3;j++) {
+//			 
+//			 data[i-1][j] = row.getCell(j).getStringCellValue();
+//		 }
+//	 }
+//	
+//	return data;
+//	
+//	
+//}
+
+//JSONObject obj = new JSONObject(json);
+//JSONArray jsonarray = new JSONArray(json);
+//
+
+//for (int i = 0; i < jsonarray.length(); i++) {
+//	JSONObject jsonobject = jsonarray.getJSONObject(i);
+//	String name = jsonobject.getString("name");
+//	String capital = jsonobject.getString("capital");
+//}

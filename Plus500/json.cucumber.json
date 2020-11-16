@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9693005800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Plus500Steps.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validate The Price Range",
+        "description": "",
+        "id": "plus500-application;validate-the-price-range;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1221070900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Plus500Steps.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11121836700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User on LoginPage",
+            "match": {
+              "location": "Plus500Steps.user_on_LoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 529409100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "\"cm.jnanesh@gmail.com\" and \"plus500_jna\" entered",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cm.jnanesh@gmail.com",
+                  "offset": 1
+                },
+                {
+                  "val": "plus500_jna",
+                  "offset": 28
+                }
+              ],
+              "location": "Plus500Steps.and_entered(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221153100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Login",
+            "match": {
+              "location": "Plus500Steps.login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5020777600,
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat StepDefinitions.Plus500Steps.user_is_on_Homepage(Plus500Steps.java:98)\r\n\tat ✽.Given User is on Homepage(Plus500.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User is on Homepage",
+            "match": {
+              "location": "Plus500Steps.user_is_on_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Search for \"GBP/USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GBP/USD",
+                  "offset": 12
+                }
+              ],
+              "location": "Plus500Steps.search_for(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Assert Buy Sell Prices within \"\u003cX\u003e\" and \"\u003cY\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cX\u003e",
+                  "offset": 31
+                },
+                {
+                  "val": "\u003cY\u003e",
+                  "offset": 41
+                }
+              ],
+              "location": "Plus500Steps.assert_Buy_Sell_Prices_within_and(float,float)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Plus500 Application",
+    "description": "",
+    "id": "plus500-application",
+    "keyword": "Feature",
+    "uri": "Plus500.feature"
+  }
+]

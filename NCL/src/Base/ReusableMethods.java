@@ -2,7 +2,6 @@ package Base;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import org.openqa.selenium.WebElement;
 
 import com.relevantcodes.extentreports.ExtentReports;

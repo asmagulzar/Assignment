@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="27.807253">
+<testcase classname="Plus500 Application" name="Validate The Price Range" time="27.807253">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:1037)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:45)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:55)&#13;&#10;&#9;at StepDefinitions.Plus500Steps.user_is_on_Homepage(Plus500Steps.java:98)&#13;&#10;&#9;at ✽.Given User is on Homepage(Plus500.feature:7)&#13;&#10;"><![CDATA[Given User on LoginPage.....................................................passed
+When "cm.jnanesh@gmail.com" and "plus500_jna" entered.......................passed
+Then Login..................................................................passed
+Given User is on Homepage...................................................failed
+When Search for "GBP/USD"...................................................skipped
+Then Assert Buy Sell Prices within "<X>" and "<Y>"..........................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at StepDefinitions.Plus500Steps.user_is_on_Homepage(Plus500Steps.java:98)
+	at ✽.Given User is on Homepage(Plus500.feature:7)
+]]></failure>
+</testcase>
+</testsuite>

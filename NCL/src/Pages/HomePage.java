@@ -1,6 +1,5 @@
 package Pages;
 import Base.*;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
