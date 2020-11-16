@@ -47,12 +47,14 @@ public class LoginPage extends Plus500TestBase {
 	public void Click_AlreadyHaveAccount() {
 		Click(AlreadyHaveAccount,"AlreadyHaveAccount Link");
 	}
-	public void EnterUsernamePassword(String username,String password) {
+	public void EnterUsernamePassword(String username,String password) throws InterruptedException {
 		EnterText(Username,username,"Username");
+		Thread.sleep(2000);
 		EnterText(Password,password,"Password");
 	}
 	
-	public void Click_Login() {
+	public void Click_Login() throws InterruptedException {
+		Thread.sleep(2000);
 		Click(LoginButton,"Login Button");
 	}
 	

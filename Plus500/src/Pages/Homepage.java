@@ -22,10 +22,10 @@ public class Homepage extends Plus500TestBase {
 	@FindBy(xpath = "//input[@id='main-search-input']")
 	public WebElement SearchBox;
 	
-	@FindBy(xpath = "//span[@id='_win_bind4053']")
+	@FindBy(xpath = "(//span[@class='value'])[1]")
 	public WebElement SellPrice;
 	
-	@FindBy(xpath = "//span[@id='_win_bind4056']")
+	@FindBy(xpath = "(//span[@class='value'])[2]")
 	public WebElement BuyPrice;
 	
 	//Methods

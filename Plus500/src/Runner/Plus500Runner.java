@@ -9,5 +9,5 @@ format = { "pretty", "html:test_output","junit:junit_report.cucumber.xml", "json
 monochrome = true, dryRun = false)
 
 public class Plus500Runner {
-
+	
 }
